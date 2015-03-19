@@ -10,22 +10,26 @@ This will also increase aggravation, snaring and disappointment from other devel
 
 leave your code as clean as or better than you found it
 
-# Common Best Practices
+
+
+# About the compiler
+
 
 ## Visible and Invisible comments
 
-```
+```sass
 // comment goes here <- these comments will not be output into your CSS
 ```
 
-```
+```sass
 /* comment goes here */ <- these comments can be output into your css depending on settings
 ```
 
-### Compiler Settings
+## Compiler Settings
 
-- Default Sass
-```
+**Default Sass**
+
+```sass
 // test comment
 /* test comment */
 $paddings: 30px;
@@ -36,8 +40,9 @@ $size: 4em;
 }
 ```
 
-- Expanded
-```
+**Expanded**
+
+```sass
 /* test comment */
 .btn-lg {
 	padding: 30px;
@@ -45,27 +50,33 @@ $size: 4em;
 }
 ```
 
-- Nested
-```
+**Nested**
+
+```css
 /* test comment */
 .btn-lg {
   padding: 30px;
   font-size: 4em; }
 ```
 
-- Compact
-```
+**Compact**
+
+```css
 /* test comment */
 .btn-lg { padding: 30px; font-size: 4em; }
 ```
 
-- Compressed
-```
+**Compressed**
+
+```css
 .btn-lg{padding:30px;font-size:4em}
 ```
 
+# Common Best Practices
+
 ## Nesting
-```
+
+```css
 .block {
 	color: orange;
 	ul {
@@ -79,13 +90,14 @@ $size: 4em;
 	}
 }
 ```
+
 This is good, we are really following the OOP approach to Sass, is what you might think. But let's take a different look at this do we really need to be that specific especially for that last nested p selector?
 
 This is really bad and you might end up writing that p selector style over and over again.
 
 Which violates the rules of DRY
 
-```
+```sass
 .block {
 	color: orange;
 }
