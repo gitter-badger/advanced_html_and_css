@@ -14,7 +14,6 @@ leave your code as clean as or better than you found it
 
 # About the compiler
 
-
 ## Visible and Invisible comments
 
 ```sass
@@ -119,13 +118,13 @@ this might not be the best example, but I hope you get the idea.
 
 ## Naming Conventions
 
-camelCase
+- camelCase
 
-snake_case
+- snake_case
 
-hyphen-case
+- hyphen-case
 
-PascalCase
+- PascalCase
 
 regardless of what ever floats your boat, the goal is to be consistent!
 
